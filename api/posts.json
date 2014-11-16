@@ -1,0 +1,21 @@
+[
+  {
+    "uid": 1,
+    "avatar" : "../images/avatar-01.svg",
+    "number": 789,
+    "username" : "Eric"
+
+  },
+  {
+    "uid": 2,
+    "avatar" : "../images/avatar-02.svg",
+    "number": 489,
+    "username" : "Rob"
+  },
+    {
+    "uid": 3,
+    "avatar" : "../images/avatar-03.svg",
+    "number": 143,
+    "username" : "Dimitri"
+  }
+]

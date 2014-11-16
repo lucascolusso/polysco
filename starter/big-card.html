@@ -1,0 +1,46 @@
+<link rel="import" href="../components/polymer/polymer.html">
+<link rel="import" href="../post-service/post-service.html">
+<link rel="import" href="friend-line.html">
+
+<polymer-element name="big-card">
+  <template>
+    <style>
+    :host {
+      display: block;
+      position: relative;
+      background-color: white;
+      padding: 20px;
+      width: 100%;
+      font-size: 1.2rem;
+      font-weight: 300;
+    }
+
+    </style>
+
+      <p>Your friend's updates</p>
+      <hr>
+
+      <post-service id="service" posts="{{posts}}">
+      </post-service>
+
+      <div layout vertical>
+
+        <template repeat="{{post in posts}}">
+          <friend-line>
+            <p>
+              <img src="{{post.avatar}}" width="20" height="20">
+              <b>{{post.number}}</b>
+              <a href="#">photos</a> where uploaded by
+              <b>{{post.username}}</b>
+            </p>
+          </friend-line>
+        </template>
+
+      </div>
+
+  </template>
+
+  <script>
+  Polymer({});
+  </script>
+</polymer-element>

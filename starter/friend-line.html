@@ -1,0 +1,31 @@
+<link rel="import" href="../components/polymer/polymer.html">
+<link rel="import" href="../post-service/post-service.html">
+
+<polymer-element name="post-list" attributes="show">
+  <template>
+    <style>
+    :host {
+      display: block;
+      width: 100%;
+    }
+    </style>
+
+    <div layout horizontal center>
+      <p>
+        <img src="{{post.avatar}}" width="20" height="20">
+        <h2>{{post.number}}</h2>
+        photos where uploaded by
+        <b>{{post.username}}</b>
+       </p>
+    </div>
+    <content></content>
+
+  </template>
+
+  <script>
+  Polymer({});
+  </script>
+
+</polymer-element>
+
+
